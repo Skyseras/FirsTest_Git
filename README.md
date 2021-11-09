@@ -23,3 +23,17 @@ GitHub
 		- It is used for sharing the work in front of the public.
  8. Disadvantages: - There is a limited private repository.
 		- It supports only Git version control.
+
+COMMANDS:
+
+git init (pour initialiser une repo)
+
+git add . (pour ajouter des fichier pour etre commit)
+
+git commit -m "" (pour enregistrer les modifications avec un message)
+
+git push (pour envoier les modifications au serveur git)
+
+git status (pour afficher le status des fichier)
+
+git remote -v (verifier si le fichier est une repo)
