@@ -29,7 +29,7 @@ Commandes GIT:
 
 Git config
 On l’utilise pour configurer les préférences de l’utilisateur : son mail, l’algorithme utilisé pour diff, le nom d’utilisateur et le format de fichier etc.
-git config --global user.email sam@google.com
+git config --global user.email Yasser@google.com
 
 Git init
 Cette commande est utilisée pour créer un nouveau dépôt GIT.
@@ -39,7 +39,7 @@ La commande git add peut être utilisée pour ajouter des fichiers à l’index.
 
 Clone git
 La commande git clone est utilisée pour la vérification des dépôts. Si le dépôt se trouve sur un serveur distant, utilisez:
-git clone alex@93.188.160.58:/chemin/vers/dépôt
+git clone Yasser@93.188.160.58:/chemin/vers/dépôt
 Inversement, si une copie de travail d’un dépôt local doit être créée, utilisez:
 git clone /chemin/vers/dépôt
 
@@ -89,7 +89,7 @@ git tag 1.1.0 <insert-commitID-here>
 Git log
 L’ exécution de cette commande génère le log d’une branche. Un exemple de sortie :
 commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw 
-Author: Alex Hunter <alexh@gmail.com> 
+Author: Yasser Elmahfoudi <yasserelmahfoudi@gmail.com> 
 Date: Mon Oct 1 12:56:29 2016 -0600
 
 Git reset
