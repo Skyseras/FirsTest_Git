@@ -24,16 +24,78 @@ GitHub:
  8. Disadvantages: - There is a limited private repository.
 		- It supports only Git version control.
 
-COMMANDS:
 
-git init (pour initialiser une repo)
+Commandes GIT:
 
-git add . (pour ajouter des fichier pour être commit)
+Git config
+On l’utilise pour configurer les préférences de l’utilisateur : son mail, l’algorithme utilisé pour diff, le nom d’utilisateur et le format de fichier etc.
+git config --global user.email sam@google.com
 
-git commit -m "" (pour enregistrer les modifications avec un message)
+Git init
+Cette commande est utilisée pour créer un nouveau dépôt GIT.
 
-git push (pour envoyer les modifications au serveur git)
+Git add
+La commande git add peut être utilisée pour ajouter des fichiers à l’index. Par exemple, git add temp.txt
 
-git status (pour afficher le statut des fichier)
+Clone git
+La commande git clone est utilisée pour la vérification des dépôts. Si le dépôt se trouve sur un serveur distant, utilisez:
+git clone alex@93.188.160.58:/chemin/vers/dépôt
+Inversement, si une copie de travail d’un dépôt local doit être créée, utilisez:
+git clone /chemin/vers/dépôt
 
-git remote -v (vérifier si le fichier est une repo)
+Git commit
+La commande git commit permet de valider les modifications apportées au HEAD. Exemple: git commit –m “Description du commit”
+
+Git status
+La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés.
+
+Git push
+Un simple push envoie les modifications locales apportées à la branche principale associée : git push origin main.
+
+Git checkout
+La commande git checkout peut être utilisée pour créer des branches ou pour basculer entre elles. Par exemple nous allons créer une branche:
+command git checkout -b <nom-branche>
+Pour passer simplement d’une branche à une autre, utilisez:
+git checkout <nom-branche>
+
+Git remote
+Cette commande remote permet à un utilisateur de se connecter à un dépôt distant. git remote –v
+
+Git branch
+La commande git branch peut être utilisée pour répertorier, créer ou supprimer des branches. Pour répertorier toutes les branches présentes dans le dépôt, utilisez:
+git branch
+Pour supprimer une branche:
+git branch –d <nom-branche>
+
+Git pull
+Pour fusionner toutes les modifications présentes sur le dépôt distant dans le répertoire de travail local.
+
+Git merge
+La commande git merge est utilisée pour fusionner une branche dans la branche active. Usage:
+git merge <nom-branche>
+
+Git diff
+La commande git diff permet de lister les conflits. Pour visualiser les conflits d’un fichier, utilisez
+git diff --base <nom-fichier>
+La commande suivante est utilisée pour afficher les conflits entre les branches à fusionner avant de les fusionner:
+git diff <branche-source> <branche-cible>
+Pour simplement énumérer tous les conflits actuels, utilisez:
+git diff
+
+Git tag
+Le marquage est utilisé pour marquer des commits spécifiques avec des poignées simples. Un exemple peut être:
+git tag 1.1.0 <insert-commitID-here>
+
+Git log
+L’ exécution de cette commande génère le log d’une branche. Un exemple de sortie :
+commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw 
+Author: Alex Hunter <alexh@gmail.com> 
+Date: Mon Oct 1 12:56:29 2016 -0600
+
+Git reset
+Pour réinitialiser l’index et le répertoire de travail à l’état du dernier commit, la commande git reset est utilisée :
+git reset --hard HEAD
+
+Git rm
+Git rm peut être utilisé pour supprimer des fichiers de l’index et du répertoire de travail. Usage:
+git rm nomfichier.txt
